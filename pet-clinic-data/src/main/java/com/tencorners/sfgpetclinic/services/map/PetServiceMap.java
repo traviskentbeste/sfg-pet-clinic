@@ -2,9 +2,11 @@ package com.tencorners.sfgpetclinic.services.map;
 
 import com.tencorners.sfgpetclinic.model.Pet;
 import com.tencorners.sfgpetclinic.services.CrudService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long>
 {
     @Override
